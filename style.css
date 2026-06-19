@@ -1,0 +1,564 @@
+body{
+
+    background-image: url("imagenes/fondo1.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    font-family: Arial, sans-serif;
+
+    text-align: center;
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+h1{
+
+    color: white;
+
+    text-shadow: 2px 2px 8px black;
+
+    margin-top: 40px;
+}
+
+.contenedor-regalos{
+
+    margin-top: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.regalo{
+
+    width: 220px;
+
+    height: 60px;
+
+    margin: 10px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background-color: rgba(255,255,255,0.85);
+
+    transition: transform 0.2s;
+}
+
+.regalo:hover{
+
+    transform: scale(1.05);
+}
+
+#contenido{
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin-top: 30px;
+
+    color: white;
+
+    text-shadow: 2px 2px 8px black;
+}
+
+.contenedor-canciones{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.tarjeta-cancion{
+
+    width: 280px;
+
+    background-color: rgba(0,0,0,0.35);
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    backdrop-filter: blur(5px);
+
+    transition: transform 0.2s;
+}
+
+.tarjeta-cancion:hover{
+
+    transform: scale(1.03);
+}
+
+.tarjeta-cancion img{
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    margin-bottom: 10px;
+}
+
+.tarjeta-cancion h2{
+
+    color: white;
+
+    margin-top: 10px;
+
+    margin-bottom: 15px;
+}
+
+.tarjeta-cancion audio{
+
+    width: 100%;
+}
+
+.contenedor-destinos{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.ticket{
+
+    width: 250px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background-color: rgba(0,0,0,0.35);
+
+    backdrop-filter: blur(5px);
+
+    cursor: pointer;
+
+    transition: transform 0.2s;
+}
+
+.ticket:hover{
+
+    transform: scale(1.05);
+}
+
+.ticket h2{
+
+    color: white;
+}
+
+.postal{
+
+    background-color: rgba(0,0,0,0.35);
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+    backdrop-filter: blur(5px);
+}
+
+.postal img{
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 600px;
+
+    height: auto;
+
+    margin: 0 auto 20px auto;
+
+    border-radius: 12px;
+}
+
+.progreso{
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+.mensaje-viaje{
+
+    background-color: rgba(0,0,0,0.45);
+
+    border-radius: 12px;
+
+    padding: 10px 18px;
+
+    margin-top: 12px;
+
+    max-width: 520px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+.mensaje-viaje p{
+
+    color: white;
+
+    font-size: 18px;
+
+    line-height: 1.4;
+
+    margin: 6px 0;
+
+    text-shadow:
+        2px 2px 5px rgba(0,0,0,1);
+}
+
+.ticket.bloqueado{
+
+    opacity: 0.5;
+
+    cursor: not-allowed;
+
+    filter: grayscale(100%);
+}
+
+.contenedor-destinos{
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    margin-top: 30px;
+}
+
+.ticket{
+
+    width: 260px;
+
+    min-height: 180px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.95),
+        rgba(235,235,235,0.95)
+    );
+
+    color: black;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    cursor: pointer;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+
+    transition: transform 0.2s;
+
+    text-shadow: none;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.ticket:hover{
+
+    transform: scale(1.04);
+}
+
+.ticket::before{
+
+    content: "🎫";
+
+    position: absolute;
+
+    top: 10px;
+
+    right: 15px;
+
+    font-size: 32px;
+}
+
+.ticket h2{
+
+    margin-top: 10px;
+
+    margin-bottom: 20px;
+
+    font-size: 24px;
+
+    color: #222;
+}
+
+.ticket p{
+
+    font-size: 17px;
+
+    line-height: 1.5;
+}
+
+.ticket.bloqueado{
+
+    opacity: 0.55;
+
+    filter: grayscale(100%);
+
+    cursor: not-allowed;
+}
+
+.pantalla-pokemon{
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 800px;
+
+    background-image: url("imagenes/fondo_pokemon.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    padding-top: 30px;
+}
+
+.pokebola{
+
+    width: 75px;
+
+    cursor: pointer;
+
+    position: absolute;
+
+    transition: transform 0.2s;
+}
+
+.pokebola:hover{
+
+    transform: scale(1.1);
+}
+
+.mensaje-pokemon{
+
+    background-color: rgba(0,0,0,0.65);
+
+    display: block;
+
+    width: fit-content;
+
+    margin: 0 auto 25px auto;
+
+    padding: 15px 25px;
+
+    border-radius: 12px;
+
+    color: white;
+
+    text-shadow: none;
+}
+
+#mensajeErrorPokemon{
+
+    color: #ffb3b3;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+}
+
+.pokebola-premio{
+
+    display: block;
+
+    width: 180px;
+
+    margin: 25px auto 0 auto;
+
+    cursor: pointer;
+}
+
+
+.carta-pokemon{
+
+    max-width: 380px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.cabecera-carta{
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.titulo-carta{
+
+    margin-bottom: 15px;
+}
+
+.imagen-carta{
+
+    width: 100%;
+
+    border-radius: 10px;
+
+    border: 4px solid #b8860b;
+}
+
+.texto-carta{
+
+    margin-top: 15px;
+
+    background: rgba(255,255,255,0.5);
+
+    padding: 15px;
+
+    border-radius: 10px;
+}
+
+.stats-carta{
+
+    margin-top: 15px;
+
+    background: rgba(255,255,255,0.4);
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    text-align: left;
+}
+
+.premio-pokemon{
+
+    text-align: center;
+}
+
+.sobre-final{
+
+    width: 250px;
+
+    display: block;
+
+    margin: 30px auto;
+
+    cursor: pointer;
+
+    transition: transform 0.3s;
+}
+
+.sobre-final:hover{
+
+    transform: scale(1.05);
+}
+
+.imagen-carta-final{
+
+    width: 100%;
+
+    max-width: 700px;
+
+    display: block;
+
+    margin: auto;
+
+    border-radius: 15px;
+}
+
+.carta-final{
+
+    text-align: center;
+}
+
+.titulo-principal{
+
+    font-size: 3rem;
+}
+
+.item-regalo{
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.imagen-regalo{
+
+    width: 120px;
+
+    cursor: pointer;
+
+    transition: transform 0.2s;
+}
+
+.imagen-regalo:hover{
+
+    transform: scale(1.08);
+}
+
+.imagen-destino{
+
+    width: 90px;
+
+    margin-top: 15px;
+}

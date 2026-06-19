@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Un pequeño regalo</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <div id="pantallaPrincipal">
+
+        <h1 class="titulo-principal">
+            🎂 Feliz Cumpleaños, Sarita 🎂
+        </h1>
+
+        <div class="contenedor-regalos">
+
+            <div class="item-regalo">
+
+                <img src="imagenes/regalo.png"
+                     class="imagen-regalo"
+                     onclick="abrirRegalo(1)">
+
+                <button class="regalo"
+                        onclick="abrirRegalo(1)">
+                    Regalo 1
+                </button>
+
+            </div>
+
+            <div class="item-regalo">
+
+                <img src="imagenes/regalo.png"
+                     class="imagen-regalo"
+                     onclick="abrirRegalo(2)">
+
+                <button class="regalo"
+                        onclick="abrirRegalo(2)">
+                    Regalo 2
+                </button>
+
+            </div>
+
+            <div class="item-regalo">
+
+                <img src="imagenes/regalo.png"
+                     class="imagen-regalo"
+                     onclick="abrirRegalo(3)">
+
+                <button class="regalo"
+                        onclick="abrirRegalo(3)">
+                    Regalo 3
+                </button>
+
+            </div>
+
+            <div class="item-regalo">
+
+                <img src="imagenes/sobre_final.png"
+                     class="imagen-regalo">
+
+                <button id="final"
+                        class="regalo"
+                        onclick="abrirRegalo(4)"
+                        disabled>
+                    🔒 Regalo Final
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="contenido"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
