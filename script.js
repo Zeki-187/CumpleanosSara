@@ -66,7 +66,7 @@ if(numero === 1){
                     <audio controls>
                         <source
                             src="musica/contigo.m4a"
-                            type="audio/mpeg">
+                            type="audio/mp4">
                     </audio>
 
                 </div>
@@ -81,7 +81,7 @@ if(numero === 1){
                     <audio controls>
                         <source
                             src="musica/eres.m4a"
-                            type="audio/mpeg">
+                            type="audio/mp4">
                     </audio>
 
                 </div>
